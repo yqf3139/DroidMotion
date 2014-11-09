@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fireBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Acceleration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acceleration : " />
+
+        <TextView
+            android:id="@+id/Gravity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gravity : " />
+
+        <TextView
+            android:id="@+id/Gyroscope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gyroscope : " />
+        
+        <TextView
+            android:id="@+id/LinearAcceleration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinearAcceleration : " /> 
+            
+        <TextView
+            android:id="@+id/RotationVector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RotationVector : " />
+        
+        <TextView
+            android:id="@+id/Proximity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proximity : " />
+            
+        <TextView
+            android:id="@+id/MagneticField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magnetic Field : " />
+            
+        <TextView
+            android:id="@+id/Orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orientation : " />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fireBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="fire a motion" />
+
+</RelativeLayout>
